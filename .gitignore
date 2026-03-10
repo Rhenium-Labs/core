@@ -1,0 +1,27 @@
+# Node modules. Heaviest object in the universe.
+node_modules/
+
+# Environment files.
+.env
+.env.local
+.env.dev
+.env.prod
+
+# Build output.
+out/
+dist/
+build/
+.svelte-kit
+.turbo
+
+# Finder (MacOS) and Thumbs.db (Windows) files.
+.DS_Store
+Thumbs.db
+
+# Caches.
+.cache/
+.eslintcache/
+*.tsbuildinfo
+
+# Config files.
+rhenium.bot.yml

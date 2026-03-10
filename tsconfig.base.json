@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		// Strict type checking.
+		"strict": true,
+		"alwaysStrict": true,
+
+		// Module resolution and output settings.
+		"lib": ["ESNext"],
+		"types": ["node"],
+		"target": "esnext",
+		"module": "nodenext",
+		"incremental": true,
+		"moduleResolution": "nodenext",
+
+		// Advanced stuff.
+		"skipLibCheck": true,
+		"downlevelIteration": true,
+		"verbatimModuleSyntax": true,
+		"allowSyntheticDefaultImports": true,
+
+		// Decorators.
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+
+		// Code quality.
+		"pretty": true,
+		"removeComments": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false
+	}
+}

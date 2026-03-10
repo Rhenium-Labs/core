@@ -1,0 +1,18 @@
+{
+	"$schema": "https://turborepo.com/schema.json",
+	"tasks": {
+		"compile": {
+			"dependsOn": ["^compile"],
+			"inputs": ["$TURBO_DEFAULT$", ".env*"],
+			"outputs": []
+		},
+		"format": {
+			"inputs": ["$TURBO_DEFAULT$"],
+			"outputs": []
+		},
+		"lint": {
+			"inputs": ["$TURBO_DEFAULT$"],
+			"outputs": []
+		}
+	}
+}
