@@ -1,0 +1,24 @@
+{
+	"name": "@rhenium/bot",
+	"type": "module",
+	"module": "./build/index.js",
+	"version": "0.0.0",
+	"description": "Source code for the next iteration of the Rhenium bot.",
+	"homepage": "https://github.com/Rhenium-Labs/core/blob/main/apps/rhenium/README.md",
+	"bugs": {
+		"url": "https://github.com/Rhenium-Labs/core/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Rhenium-Labs/core.git"
+	},
+	"contributors": [
+		"Eddy (@cobaltorum)"
+	],
+	"scripts": {
+		"lint": "oxlint src/**/*.ts -c ../../.oxlintrc.json",
+		"start": "bun run ./build/index.js",
+		"format": "prettier --write src/**/*.ts",
+		"compile": "tsc"
+	}
+}

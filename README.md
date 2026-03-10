@@ -2,7 +2,7 @@
 
 The next iteration of Rhenium.
 
-## Why the f*ck another rewrite?
+## Why the f\*ck another rewrite?
 
 Because the current architecture has reached its limits.
 
@@ -11,3 +11,11 @@ Rhenium started as a relatively small project, but it has somehow grown past the
 The goal for Rhenium Core is simple: create a streamlined, reliable system that is enjoyable to work on and powerful enough to support the next generation of Rhenium.
 
 Ideally, this becomes something others can learn from, or even something people might want to self-host themselves.
+
+## Contributing
+
+Each package or application has it's own contributing guidelines. Refer to the `CONTRIBUTING.md` file in each directory.
+
+## License
+
+Rhenium is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** license. For full details, see the [LICENSE](./LICENSE) file.

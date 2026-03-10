@@ -10,10 +10,6 @@
 		"type": "git",
 		"url": "git+https://github.com/Rhenium-Labs/core.git"
 	},
-	"contributors": [
-		"Matt (@spldermat)",
-		"Eddy (@cobaltorum)"
-	],
 	"packageManager": "bun@1.3.10",
 	"workspaces": [
 		"deps/*",
@@ -21,6 +17,7 @@
 	],
 	"scripts": {
 		"lint": "turbo run lint",
+		"start": "turbo run start",
 		"format": "turbo run format",
 		"compile": "turbo run compile"
 	},
