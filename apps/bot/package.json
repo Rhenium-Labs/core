@@ -1,7 +1,7 @@
 {
 	"name": "@rhenium/bot",
 	"type": "module",
-	"module": "./build/index.js",
+	"main": "./build/index.js",
 	"version": "0.0.0",
 	"description": "Source code for the next iteration of the Rhenium bot.",
 	"homepage": "https://github.com/Rhenium-Labs/core/blob/main/apps/rhenium/README.md",
@@ -17,8 +17,22 @@
 	],
 	"scripts": {
 		"lint": "oxlint src/**/*.ts -c ../../.oxlintrc.json",
-		"start": "bun run ./build/index.js",
+		"start": "node ./build/index.js",
 		"format": "prettier --write src/**/*.ts",
 		"compile": "tsc"
+	},
+	"dependencies": {
+		"discord.js": "^14.25.1",
+		"dotenv": "^17.3.1",
+		"pino": "^10.3.1",
+		"pino-pretty": "^13.1.3"
+	},
+	"imports": {
+		"#structures/*": "./build/lib/structures/*",
+		"#utils/*": "./build/lib/utils/*",
+		"#root/*": "./build/*"
+	},
+	"devDependencies": {
+		"@types/pino": "^7.0.5"
 	}
 }
