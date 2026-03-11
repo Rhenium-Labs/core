@@ -9,3 +9,13 @@
 export function inflect(count: number, singular: string, plural = `${singular}s`): string {
 	return count === 1 ? singular : plural;
 }
+
+/**
+ * Causes a delay for a specified duration.
+ *
+ * @param duration The duration of the delay in milliseconds.
+ * @returns A promise that resolves after the specified duration has elapsed.
+ */
+export function sleep(duration: number): Promise<void> {
+	return new Promise(resolve => setTimeout(resolve, duration));
+}

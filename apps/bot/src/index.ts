@@ -2,6 +2,7 @@
 import "dotenv/config.js";
 
 import { env } from "./env.js";
+import { sleep } from "#utils/index.js";
 
 import Rhenium from "#structures/Rhenium.js";
 
@@ -10,11 +11,18 @@ export const client = new Rhenium();
 
 /** Main entry point for the program. */
 async function main(): Promise<void> {
+	// Cache commands.
+	await client.cacheCommands();
+
 	// Mount event listeners.
 	await client.mountEventListeners();
 
 	// Connect to the gateway.
 	await client.login(env.CLIENT_TOKEN);
+
+	// Wait 2 seconds then register application commands.
+	await sleep(2000);
+	await client.registerApplicationCommands();
 }
 
 void main();
