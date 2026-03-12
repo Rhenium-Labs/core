@@ -1,0 +1,14 @@
+{
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./build",
+		"tsBuildInfoFile": "./build/tsconfig.tsbuildinfo",
+
+		// Source map options.
+		"sourceMap": true,
+		"sourceRoot": "/",
+		"inlineSources": true
+	},
+	"exclude": ["prisma.config.ts"]
+}

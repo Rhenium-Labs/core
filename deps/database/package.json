@@ -1,0 +1,16 @@
+{
+	"name": "@deps/db",
+	"type": "module",
+	"main": "./build/index.js",
+	"private": true,
+	"exports": {
+		"./enums": "./build/Enums.js",
+		"./schema": "./src/Schema.ts",
+		".": "./build/index.js"
+	},
+	"scripts": {
+		"lint": "oxlint src/**/*.ts -c ../../.oxlintrc.json",
+		"format": "prettier --write src/**/*.ts",
+		"compile": "tsc"
+	}
+}
