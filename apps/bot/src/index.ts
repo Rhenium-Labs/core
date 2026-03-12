@@ -1,6 +1,8 @@
 // How does Node still not load .env files by default.
 import "dotenv/config.js";
 
+import { createKyselyClient } from "@deps/db";
+
 import { env } from "./env.js";
 import { sleep } from "#utils/index.js";
 
@@ -8,6 +10,9 @@ import Rhenium from "#structures/Rhenium.js";
 
 /** Primary discord.js client instance. */
 export const client = new Rhenium();
+
+/** Primary Kysely client instance. */
+export const kysely = createKyselyClient(env.PG_URL);
 
 /** Main entry point for the program. */
 async function main(): Promise<void> {

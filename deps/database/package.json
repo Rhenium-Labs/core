@@ -4,13 +4,24 @@
 	"main": "./build/index.js",
 	"private": true,
 	"exports": {
-		"./enums": "./build/Enums.js",
-		"./schema": "./src/Schema.ts",
-		".": "./build/index.js"
+		"./enums": {
+			"types": "./src/Enums.ts",
+			"default": "./build/Enums.js"
+		},
+		"./schema": {
+			"types": "./src/Schema.ts",
+			"default": "./build/Schema.js"
+		},
+		".": {
+			"types": "./src/index.ts",
+			"default": "./build/index.js"
+		}
 	},
 	"scripts": {
 		"lint": "oxlint src/**/*.ts -c ../../.oxlintrc.json",
 		"format": "prettier --write src/**/*.ts",
-		"compile": "tsc"
+		"compile": "tsc",
+		"db:migrate": "bunx prisma migrate deploy",
+		"db:generate": "bunx prisma generate"
 	}
 }

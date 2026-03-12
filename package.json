@@ -20,7 +20,6 @@
 		"start": "turbo run start",
 		"format": "turbo run format",
 		"compile": "turbo run compile",
-		"db:generate": "bunx prisma generate --schema ./deps/database/prisma/schema.prisma",
 		"bot:start": "bun run start --filter @rhenium/bot"
 	},
 	"devDependencies": {

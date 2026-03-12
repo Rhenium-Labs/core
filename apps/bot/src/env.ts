@@ -6,7 +6,8 @@ export const env = createEnv({
 	 * Since the bot is just a single server app, we can just put all of our environment variables in the `server` section. The `client` section is meant for environment variables that are exposed to the client, which we don't have in this case.
 	 */
 	server: {
-		CLIENT_TOKEN: z.string().nonempty()
+		CLIENT_TOKEN: z.string().nonempty(),
+		PG_URL: z.string().nonempty()
 	},
 
 	/**
